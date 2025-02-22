@@ -2,6 +2,7 @@ import "./globals.css";
 
 import type React from "react";
 import { Space_Grotesk } from "next/font/google";
+import Navbar from "./components/Navbar";
 
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
@@ -17,7 +18,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={spaceGrotesk.className}>{children}</body>
+      <body className={spaceGrotesk.className}>
+        <Navbar />
+        <main className="pt-16">{children}</main>
+      </body>
     </html>
   );
 }
