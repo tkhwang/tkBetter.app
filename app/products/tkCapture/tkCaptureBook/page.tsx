@@ -1,7 +1,7 @@
-import { TK_CAPTURE_PRODUCTS } from "@/app/consts/consts";
+import { getProduct } from "@/app/utils/product";
 
 export default function TkCaptureBookPage() {
-  const product = TK_CAPTURE_PRODUCTS.find((p) => p.id === "tkcapturebook")!;
+  const product = getProduct("tkCapture", "tkcapturebook")!;
 
   return (
     <div className="min-h-screen bg-white">

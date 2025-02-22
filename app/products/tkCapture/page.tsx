@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { TK_CAPTURE_SERIES } from "@/app/consts/consts";
+import { PRODUCTS } from "@/app/consts/consts";
 
 export default function TkCapturePage() {
   return (
@@ -9,16 +9,16 @@ export default function TkCapturePage() {
           {/* Series Introduction */}
           <div className="text-center mb-16">
             <h1 className="text-4xl font-bold mb-4">
-              {TK_CAPTURE_SERIES.name}
+              {PRODUCTS.tkCapture.name}
             </h1>
             <p className="text-xl text-gray-600">
-              {TK_CAPTURE_SERIES.description}
+              {PRODUCTS.tkCapture.description}
             </p>
           </div>
 
           {/* Products Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {TK_CAPTURE_SERIES.products.map((product) => (
+            {PRODUCTS.tkCapture.products.map((product) => (
               <Link
                 key={product.id}
                 href={product.href}

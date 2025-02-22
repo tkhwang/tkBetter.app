@@ -1,4 +1,4 @@
-import { APP_NAME, TK_CAPTURE_SERIES } from "@/app/consts/consts";
+import { APP_NAME, PRODUCTS } from "@/app/consts/consts";
 
 export default function Page() {
   return (
@@ -36,7 +36,7 @@ export default function Page() {
 
                 {/* Features */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full mb-8">
-                  {TK_CAPTURE_SERIES.products[0].features.map(
+                  {PRODUCTS.tkCapture.products[0].features.map(
                     (feature, index) => (
                       <div key={index} className="flex items-center space-x-2">
                         <span className="text-blue-500">•</span>
