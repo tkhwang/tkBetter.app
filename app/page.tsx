@@ -1,6 +1,4 @@
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Card } from "@/components/ui/card";
+import { APP_NAME } from "@/app/consts/consts";
 
 export default function Page() {
   return (
@@ -9,7 +7,7 @@ export default function Page() {
         {/* Header */}
         <header className="pt-8 md:pt-12 mb-24">
           <h1 className="text-2xl md:text-3xl font-bold tracking-wider text-center">
-            TK BETTER
+            {APP_NAME}
           </h1>
         </header>
 
