@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import { TK_CAPTURE_SERIES } from '@/app/consts/consts';
+import Link from "next/link";
+import { TK_CAPTURE_SERIES } from "@/app/consts/consts";
 
 export default function TkCapturePage() {
   return (
@@ -8,7 +8,9 @@ export default function TkCapturePage() {
         <div className="max-w-4xl mx-auto">
           {/* Series Introduction */}
           <div className="text-center mb-16">
-            <h1 className="text-4xl font-bold mb-4">{TK_CAPTURE_SERIES.name}</h1>
+            <h1 className="text-4xl font-bold mb-4">
+              {TK_CAPTURE_SERIES.name}
+            </h1>
             <p className="text-xl text-gray-600">
               {TK_CAPTURE_SERIES.description}
             </p>
@@ -26,18 +28,19 @@ export default function TkCapturePage() {
                   <h2 className="text-2xl font-bold mb-4 group-hover:text-blue-600 transition-colors">
                     {product.name}
                   </h2>
-                  <p className="text-gray-600 mb-6">
-                    {product.description}
-                  </p>
+                  <p className="text-gray-600 mb-6">{product.description}</p>
                   <div className="space-y-3">
                     {product.features.map((feature, index) => (
-                      <div key={index} className="flex items-center text-gray-500">
+                      <div
+                        key={index}
+                        className="flex items-center text-gray-500"
+                      >
                         <span className="text-blue-500 mr-2">•</span>
                         {feature}
                       </div>
                     ))}
                   </div>
-                  {product.status === 'coming-soon' && (
+                  {product.status === "coming-soon" && (
                     <div className="mt-6 inline-block px-4 py-2 bg-blue-100 text-blue-800 rounded-lg">
                       Coming Soon
                     </div>
