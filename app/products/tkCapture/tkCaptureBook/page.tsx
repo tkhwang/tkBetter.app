@@ -1,4 +1,4 @@
-import { getProduct } from "@/app/utils/product";
+import { getProduct } from "@/utils/product";
 
 export default function TkCaptureBookPage() {
   const product = getProduct("tkCapture", "tkcapturebook")!;

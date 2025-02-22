@@ -1,4 +1,4 @@
-import { APP_NAME, PRODUCTS } from "@/app/consts/consts";
+import { APP_NAME, PRODUCTS } from "@/consts/consts";
 
 export default function Page() {
   return (

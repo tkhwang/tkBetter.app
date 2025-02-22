@@ -2,7 +2,7 @@ import "./globals.css";
 
 import type React from "react";
 import { Space_Grotesk } from "next/font/google";
-import Navbar from "./components/Navbar";
+import Navbar from "../components/Navbar";
 
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 

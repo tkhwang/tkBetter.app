@@ -1,5 +1,5 @@
 import type { Product, ProductSeries } from "@/types/types";
-import { PRODUCTS } from "@/app/consts/consts";
+import { PRODUCTS } from "@/consts/consts";
 
 export const getProductSeries = (
   seriesId: string

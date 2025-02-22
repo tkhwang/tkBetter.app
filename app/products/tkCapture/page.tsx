@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { PRODUCTS } from "@/app/consts/consts";
+import { PRODUCTS } from "@/consts/consts";
 
 export default function TkCapturePage() {
   return (
