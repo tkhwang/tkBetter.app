@@ -1,4 +1,4 @@
-import { APP_NAME, TK_CAPTURE_SERIES } from "@/app/consts/consts";
+import { APP_NAME, PRODUCTS } from "@/consts/consts";
 
 export default function Page() {
   return (
@@ -19,7 +19,7 @@ export default function Page() {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
             Coming Soon
           </h2>
-          
+
           {/* Featured Product Card */}
           <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 border border-blue-100 hover:shadow-xl transition-all duration-300">
             <div className="max-w-3xl mx-auto">
@@ -33,17 +33,19 @@ export default function Page() {
                 <p className="text-gray-600 text-lg mb-6">
                   당신의 소중한 순간을 더 쉽게, 더 체계적으로 관리하세요
                 </p>
-                
+
                 {/* Features */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full mb-8">
-                  {TK_CAPTURE_SERIES.products[0].features.map((feature, index) => (
-                    <div key={index} className="flex items-center space-x-2">
-                      <span className="text-blue-500">•</span>
-                      <span className="text-gray-700">{feature}</span>
-                    </div>
-                  ))}
+                  {PRODUCTS.tkCapture.products[0].features.map(
+                    (feature, index) => (
+                      <div key={index} className="flex items-center space-x-2">
+                        <span className="text-blue-500">•</span>
+                        <span className="text-gray-700">{feature}</span>
+                      </div>
+                    )
+                  )}
                 </div>
-                
+
                 {/* CTA Button */}
                 <a
                   href="/products/tkCapture/tkCaptureBook"
